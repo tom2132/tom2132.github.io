@@ -21,7 +21,7 @@ entries:
  #      url: https://riggraz.dev/
 
 
-  - title: moment
+  - title: notes
     post_list: true
     url: false
     entries: false
@@ -29,14 +29,14 @@ entries:
 #  - title: rss
 #    url: feed.xml
   
-  - title: notes
-    url: false
-    entries:
-      - title: PYTHON
-        url: false
-        entries:
-          - title: Python Study Notes
-            url: _notes/Python_Study_Note
+#  - title: another
+#    url: false
+#    entries:
+#      - title: PYTHON
+#        url: false
+#        entries:
+#          - title: Python Study Notes
+#            url: _notes/Python_Study_Note
 #          - title: with subsubitems
 #           url: false
 
