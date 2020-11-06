@@ -36,7 +36,7 @@ entries:
         url: false
         entries:
           - title: Python Study Notes
-            url: _notes/Python_Study_Note
+            url: Python_Study_Note
 #          - title: with subsubitems
 #           url: false
 
