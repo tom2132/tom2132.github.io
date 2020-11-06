@@ -1,5 +1,13 @@
-# For documentation on this file, see:
-# https://github.com/riggraz/no-style-please#customize-the-menu
+# Customize the menu
+# In order to add/edit/delete entries from the main menu, you have to edit the menu.yml file inside _data folder. Through that file you can define the structure of the menu. Take a look at the default configuration to get an idea of how it works and read on for a more comprehensive explanation.
+# The menu.yml file accepts the following fields:
+#entries define a new unordered list that will contain menu entries
+#each entry is marked by a - at the beginning of the line
+#each entry has the following attributes:
+# 	title, which defines the text to render for that menu entry
+#	url, which can either be a URL or false. If it is false, the entry will be rendered as plain text; otherwise the entry will be rendered as a link pointing to the specified URL. Note that the URL can either be relative or absolute.
+#	post_list, which can be true or false. If it is true, the entry will have all posts in the site as subentries. This is used to render your post list.
+#entries, yes, you can have entries inside entries. In this way you can create nested sublists!
 
 entries:
   - title: info
@@ -13,26 +21,27 @@ entries:
  #      url: https://riggraz.dev/
 
 
-  - title: thoughts
+  - title: moment
     post_list: true
     url: false
     entries: false
 
-  - title: rss
-    url: feed.xml
+#  - title: rss
+#    url: feed.xml
   
-  - title: another list
+  - title: notes
     url: false
     entries:
-      - title: with subitems
+      - title: PYTHON
         url: false
         entries:
-          - title: with subsubitems
-            url: false
-          - title: example page
+          - title: Python Study Notes
             url: about
-  - title: PRO TIP
-    url: false
-    entries:
-      - title: to edit this menu, edit _data/menu.yml file
-        url: false
+#          - title: with subsubitems
+#           url: false
+
+#  - title: PRO TIP
+#    url: false
+#    entries:
+#      - title: to edit this menu, edit _data/menu.yml file
+#        url: false
